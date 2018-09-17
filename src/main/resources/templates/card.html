@@ -1,0 +1,47 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css" />
+    <title>少数派应用推荐</title>
+    <style>
+        /*.avatar{*/
+            /*width:40px;*/
+            /*height:40px;*/
+        /*}*/
+        .bar{
+            background-color: #292525;
+        }
+        h2{
+           color:white;
+        }
+        h3{
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+      <nav class="navbar navbar-default bar">
+          <div class="container">
+              <div class="navbar-left">
+               <img th:src="@{'img/' + ${user.avatar}}" class="img-circle avatar">
+                  <h3>少数派</h3>
+              </div>
+              <div class="navbar-center">
+                  <h2>#应用推荐</h2>
+              </div>
+              <div class="navbar-right">
+                  <h3>sd </h3>
+                  <h2>ssd</h2>
+                  <!--<img th:src="@{'img/'+${}"}">-->
+              </div>
+          </div>
+      </nav>
+      <div class="container">
+          <!--显示card内容-->
+    <!--<div class="col-md-2" th:-->
+      </div>
+</body>
+</html>
